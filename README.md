@@ -11,12 +11,7 @@
 <details>
     <summary></summary>
     <p>
-
         <script>function e() { document.write("html"); }</script>
-        ```python
-        print("hello world!")
-        ```
-
     </p>
 </details>
 
