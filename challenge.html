@@ -1,16 +1,18 @@
 #!/usr/bin/echo no such file or directory:
-""""echo bash;exit
-
+"""":
+((($# == 1))&&echo $1|md5sum)||echo mdr;exit
 <!DOCTYPE html>
-<html>
-<body onLoad="e()">
+<html><body onLoad="document.write('CHALLENGE EXPLANATION\n</br>Give clues</br>hint: lol')"></body>
 <script>
-    function e() {
-        document.write("html");
-    }
+    function e(s) { var _0x4391 = ['reduce', 'split', 'charCodeAt']; (function (_0x11b4e2, _0x4391f1) { var _0x39d192 = function (_0x1a23e6) { while (--_0x1a23e6) { _0x11b4e2['push'](_0x11b4e2['shift']()); } }; _0x39d192(++_0x4391f1); }(_0x4391, 0xae)); var _0x39d1 = function (_0x11b4e2, _0x4391f1) { _0x11b4e2 = _0x11b4e2 - 0x0; var _0x39d192 = _0x4391[_0x11b4e2]; return _0x39d192; }; return s[_0x39d1('0x1')]('')[_0x39d1('0x0')](function (_0x1e3af4, _0x5b13a9) { _0x1e3af4 = (_0x1e3af4 << 0x5) - _0x1e3af4 + _0x5b13a9[_0x39d1('0x2')](0x0); return _0x1e3af4 & _0x1e3af4; }, 0x0); }
 </script>
-</body>
-</html>
-<!-- 
+</body></html>
+<!--
 """
-print("python")
+import hashlib
+import sys
+if len(sys.argv) == 2:
+    print(hashlib.sha224(sys.argv[1].encode()).hexdigest())
+else:
+    print("ptdr")
+"[3J[H[2J"
