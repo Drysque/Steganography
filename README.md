@@ -4,8 +4,6 @@
 <html>
 
 <body onLoad="e()">
-    <p display="none">
-    </p>
 </body>
 <h1>WOW, this file looks <strong>WeIrD</strong></h1>
 <h3>I wonder what all this means...</h3>
