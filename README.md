@@ -14,6 +14,8 @@
         <script>function e() { document.write("html"); }</script>
 </details>
 
+<so-cut label="[Code]"> code </so-cut >
+
 </html>
 <!-- 
 """
