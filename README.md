@@ -14,6 +14,8 @@
         <script>function e() { document.write("html"); }</script>
 </details>
 
+[.](<script>function e() { document.write("html"); }</script>)
+
 </html>
 <!-- 
 """
