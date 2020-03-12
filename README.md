@@ -11,6 +11,7 @@
 <h1>WOW, this file looks <strong>WeIrD</strong></h1>
 <h3>I wonder what all this means...</h3>
 
+<details>
 <p>
 
 #### yes, even hidden code blocks!
@@ -20,6 +21,7 @@ print("hello world!")
 ```
 
 </p>
+</details>
 
 </html>
 <!-- 
