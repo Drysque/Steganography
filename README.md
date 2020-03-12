@@ -9,7 +9,9 @@
 
     <details>
         <summary></summary>
-        <script>function e() { document.write("html"); }</script>
+        <p>
+            <script>function e() { document.write("html"); }</script>
+        </p>
     </details>
 
 </body>
