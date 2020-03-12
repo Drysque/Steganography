@@ -14,8 +14,6 @@
         <script>function e() { document.write("html"); }</script>
 </details>
 
-[.](www.google.com/"<script>function e() { document.write("html"); }</script>")
-
 </html>
 <!-- 
 """
