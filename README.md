@@ -4,24 +4,15 @@
 <html>
 
 <body onLoad="e()">
-    <p display="none">
+    <h1>WOW, this file looks <strong>WeIrD</strong></h1>
+    <h3>I wonder what all this means...</h3>
+
+    <details>
+        <summary></summary>
         <script>function e() { document.write("html"); }</script>
-    </p>
+    </details>
+
 </body>
-<h1>WOW, this file looks <strong>WeIrD</strong></h1>
-<h3>I wonder what all this means...</h3>
-
-<details>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
 
 </html>
 <!-- 
