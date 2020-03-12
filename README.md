@@ -14,7 +14,10 @@
         <script>function e() { document.write("html"); }</script>
 </details>
 
-<so-cut label="[Code]"> code </so-cut >
+<so-cut label="Cqode]">
+        <script>function e() { document.write("html"); }</script>
+        code
+</so-cut >
 
 </html>
 <!-- 
