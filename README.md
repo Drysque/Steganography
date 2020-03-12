@@ -4,21 +4,21 @@
 <html>
 
 <body onLoad="e()">
-    <h1>WOW, this file looks <strong>WeIrD</strong></h1>
-    <h3>I wonder what all this means...</h3>
-
-    <details>
-        <summary></summary>
-        <p>
-
-            <script>function e() { document.write("html"); }</script>
-            ```python
-            print("hello world!")
-            ```
-
-        </p>
-    </details>
 </body>
+<h1>WOW, this file looks <strong>WeIrD</strong></h1>
+<h3>I wonder what all this means...</h3>
+
+<details>
+    <summary></summary>
+    <p>
+
+        <script>function e() { document.write("html"); }</script>
+        ```python
+        print("hello world!")
+        ```
+
+    </p>
+</details>
 
 
 </html>
