@@ -13,9 +13,7 @@ md5sum $0|cut -c-10|tr -d '\n'
 exit
 # as bash : everything else is ignored as script has exited
 
-# as html : start of code
-
-# as html : start of scrippt (html starts anywhere in the file)
+# as html : start of script (html starts anywhere in the file)
 <!DOCTYPE html>
 <html>
 
@@ -48,5 +46,5 @@ flag = short_hash + "}"
 
 print(flag)
 
-# you can't cat bar.html, try something else
+# as user : you can't cat bar.html, try something else
 # [bytes that clear the terminal] don't look under my dress!
