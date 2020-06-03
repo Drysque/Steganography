@@ -13,7 +13,7 @@ x () {
     for ((i = 0; i < count; i++)); do
         (( _res[i] = ${_data[i]:-0} ^ ${_key[i%nkey]:-0} ))
     done
-    printf '0x%02x ' "${_res[@]}"
+    printf "\\\\\\%o" "${_res[@]}" | xargs printf
 }
 
-x $flag $pass | xxd -r
+x $flag $pass
