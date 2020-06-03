@@ -23,7 +23,7 @@ html:
 
 
 bash/ruby:
-- crack me
+- crack me -- (root me javascript obfuscation pour voir comment faire un crack me)
 -- NEED IDEA
 
 jpeg:
@@ -41,4 +41,4 @@ archive:
 - forensic
 - crypto (root me: file and secure storage, db navigateur)
 - secret ?
--- Android dump. Find secret in pokemon app ?
+-- DONE  - chrome snapshot (still need RP)
