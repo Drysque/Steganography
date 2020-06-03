@@ -1,4 +1,4 @@
-#!/usr/bin/echo No such file or directory: 
+#!/usr/bin/bash
 
 pass="My_5up3r_c0mpL1c4t3d_k3y"
 flag='PoC{X0R_M3_D4DDY}'
