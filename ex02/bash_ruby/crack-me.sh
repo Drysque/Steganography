@@ -1,14 +1,9 @@
 #!/usr/bin/echo No such file or directory: 
 
-# pass="My_5up3r_c0mpL1c4t3d_k3y"
 read pass
 flag="HRYcTi1AYS0SUG8pRAh1Okl0M2RfazN5"
 
 assert_eq() { [ "$1" != "$2" ] && exit 1; }
-xdec () { perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $1 $2; }
-
-#    "My_5up3r_c0mpL1c4t3d_k3y"
-# pass="........................"
 
 assert_eq `tr -dc '_' <<< "$pass" | wc -c` 3
 assert_eq ${pass:0:1} M
@@ -27,4 +22,4 @@ assert_eq ${pass:1:1} ${pass:23:1}
 assert_eq `tr '3' 'e' <<< ${pass:4:4}` "uper"
 assert_eq ${#pass} 24
 
-xdec $pass $flag
+perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $pass $flag
