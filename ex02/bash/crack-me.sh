@@ -1,8 +1,7 @@
 #!/usr/bin/echo No such file or directory: 
 
-key="Imp0st3r_4_T34m_M4gm4"
-#   ".x..x..x..........xx."
-relic="ADIcAAVHbDAtBDs9ADRtX000Z200"
+read key
+read relic
 
 assert_eq() { [ "$1" != "$2" ] && exit 1; }
 
@@ -20,7 +19,12 @@ assert_eq ${key:5:1} ${relic:11:1}
 open_relic () { perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $key $relic; }
 
 transform_well () {
-   echo a
+    read code ; read relic
+    idx_code=0
+    for (( i=0; i<${#code}; i++ )); do
+        if [ ${code:$i:1} == 0 ] ; then echo -n ${relic:$idx_code:1} ; ((idx_code++))
+        else echo -n ${relic:$idx_code:1} ; fi
+    done
 }
 
-open_relic
+open_relic $key $relic

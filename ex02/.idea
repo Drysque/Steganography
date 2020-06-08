@@ -24,7 +24,7 @@ html:
 --- He will be located in the first Gym, in the Portable Document Format room. Open the door, remember the code. Ditto will escape, so leave the room.
 --- Follow him as he hides as a picture. Steal the Upside-Down relic. Ditto takes an humanoid form and runs away.
 --- An old man will spawn in The Born Again City. This is Ditto disguised but the quest is locked until you open the previously acquired relic. Find the key and crack the relic.
---- Stay in this city and use the Transform Well. First, throw the content of the relic, then the code from the room in the starting Gym. When you were occupied, his trainer found him and took him back to his place.
+--- Stay in this city and use the Transform Well. First, throw the open relic, then the code from the room in the starting Gym. When you were occupied, his trainer found him and took him back to his place.
 --- Salvage the parchment in the well and follow the trainer to the Archives. He will close the doors but use the parchment to open them. The old trainer lost the credentials to his PC. Find them and steal Ditto.
 -- DO AT THE END
 
@@ -48,3 +48,14 @@ archive:
 - crypto (root me: file and secure storage, db navigateur)
 - secret ?
 -- DONE  - chrome snapshot (still need RP)
+
+
+
+RELIC CLOSED    = ADIcAAVHbDAtBDs9ADRtX000Z200      = PNG
+RELIC KEY       = Imp0st3r_4_T34m_M4gm4             = GUESS
+RELIC OPENED    = I_l0v3_Br0di3                     = RELIC CLOSED + KEY
+
+PDF CODE        = 01101110011101110110010010011011
+
+ZIP PASS        = I___llll0vvvv3333___Brr0ddi333    = PDF CODE + RELIC OPENED
+
