@@ -34,20 +34,16 @@ bash:
 
 jpeg:
 - stega
-- LSB ?
--- NEED IDEA
 
 pdf:
-- vault
-- find secret = open door (logic circuit)
-- gives password
--- DONE (still need to put (img+rp) in pdf)
+- hardware
+- find code = open door (logic circuit)
 
 archive:
 - forensic
 - crypto (root me: file and secure storage, db navigateur)
 - secret ?
--- DONE  - chrome snapshot (still need RP)
+-- DONE - chrome snapshot
 
 
 
@@ -55,7 +51,7 @@ RELIC CLOSED    = ADIcAAVHbDAtBDs9ADRtX000Z200      = PNG
 RELIC KEY       = Imp0st3r_4_T34m_M4gm4             = GUESS
 RELIC OPENED    = I_l0v3_Br0di3                     = RELIC CLOSED + KEY
 
-PDF CODE        = 01101110011101110110010010011011
+CODE        = 01101110011101110110010010011011      = PDF DOOR CODE
 
 ZIP PASS        = I___llll0vvvv3333___Brr0ddi333    = PDF CODE + RELIC OPENED
 

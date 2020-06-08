@@ -20,6 +20,7 @@ open_relic () { perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[
 
 transform_well () {
     read code ; read relic
+    relic=`printf %-${#code}s $relic | tr ' ' _`
     idx_code=0
     for (( i=0; i<${#code}; i++ )); do
         if [ ${code:$i:1} == 0 ] ; then echo -n ${relic:$idx_code:1} ; ((idx_code++))
