@@ -1,25 +1,37 @@
 #!/usr/bin/echo No such file or directory: 
 
-read pass
-flag="HRYcTi1AYS0SUG8pRAh1Okl0M2RfazN5"
+key="Imp0st3r_4_T34m_M4gm4"
+#   ".x.xx..x..........xxx"
+relic="ADIcAAVHbDAtVlQbbFQzNG1fTTRnbTQ="
 
-assert_eq() { [ "$1" != "$2" ] && exit 1; }
+assert_eq() { echo $1 $2 ;  [ "$1" != "$2" ] && exit 1; }
 
-assert_eq `tr -dc '_' <<< "$pass" | wc -c` 3
-assert_eq ${pass:0:1} M
-assert_eq ${pass:10:1} 0
-assert_eq $((${pass:10:1}+${pass:22:1})) ${pass:18:1}
-assert_eq ${pass:6:1} ${pass:18:1}
-assert_eq ${pass:17:1} t
-assert_eq ${pass:3:1} $((${pass:16:1}+${pass:14:1}))
-assert_eq $((`printf '%d\n' "'${pass:13:1}"`-`printf '%d\n' "'${pass:0:1}"`)) $((${pass:14:1}*-1))
-assert_eq ${pass:11:1} `echo ${pass:0:1} | tr '[:upper:]' '[:lower:]'`
-assert_eq ${pass:21:1} k
-assert_eq `head -c1<<<"printf XD"` ${pass:12:1}
-assert_eq ${pass:15:1} ${pass:9:1}
-assert_eq "${pass:9:1}${pass:19:1}" `(tail -c3 | head -c 2) <<< "abcd"`
-assert_eq ${pass:1:1} ${pass:23:1}
-assert_eq `tr '3' 'e' <<< ${pass:4:4}` "uper"
-assert_eq ${#pass} 24
 
-perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $pass $flag
+assert_eq `tr -dc '_' <<< "$key" | wc -c` 3
+assert_eq ${#key} 21
+assert_eq ${key:0:1} I
+assert_eq `head -c1<<<"printf Ditto"` ${key:2:1}
+
+M=4M_M4; assert_eq ${M/M/m} ${key:13:5}
+assert_eq `printf '%x\n' "'${key:17:1}"` ${key:12:2}
+
+echo --\> ${key:6:1}${key:9:1} - ${key:12:2} = ${key:3:1}
+echo --\> 4connu - 4inconnu = ${key:3:1}
+
+assert_eq ${key:5:1} ${relic:11:1}
+assert_eq ${key:11:1} `tr '[:lower:]' '[:upper:]'<<<${key:5:1}`
+
+# assert_eq $((`printf '%d\n' "'${key:13:1}"`-`printf '%d\n' "'${key:0:1}"`)) $((${key:14:1}*-1))
+# assert_eq 34 = 4
+
+assert_eq 0 ----end----
+
+## calculus
+# assert_eq ${key:3:1} $((${key:16:1}+${key:14:1}))
+
+## resemblance ??
+# assert_eq `head -c1<<<\`printf Ditto\`` ${key:2:1}
+# assert_eq "${key:9:1}${key:19:1}" `(tail -c3 | head -c 2) <<< "abcd"`
+# assert_eq `tr '3' 'e' <<< ${key:4:4}` "uper"
+
+perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $key $relic
