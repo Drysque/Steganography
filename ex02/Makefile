@@ -1,2 +1,2 @@
 all:
-	cat test.sh test.pdf test.html test.gz test.gpj > final.html
+	@echo bash/ditto.sh pdf/ditto.pdf html/ditto.html archive/ditto.zip img/ditto.gnp ">" final.html
