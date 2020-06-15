@@ -16,16 +16,4 @@ assert_eq ${M/M/m} ${key:13:5}
 assert_eq $((${key:6:1}${key:9:1}-${key:12:2})) ${key:3:1}
 assert_eq ${key:5:1} ${relic:11:1}
 
-open_relic () { perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $key $relic; }
-
-transform_well () {
-    read code ; read relic
-    relic=`printf %-${#code}s $relic | tr ' ' _`
-    idx_code=0
-    for (( i=0; i<${#code}; i++ )); do
-        if [ ${code:$i:1} == 0 ] ; then echo -n ${relic:$idx_code:1} ; ((idx_code++))
-        else echo -n ${relic:$idx_code:1} ; fi
-    done
-}
-
-open_relic $key $relic
+perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $key $relic
