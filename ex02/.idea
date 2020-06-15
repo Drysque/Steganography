@@ -1,20 +1,9 @@
-NAME: ditto
-THEME: pokemon
-
-
-each step -> next step:
-- oh no ditto changed format
-- he changed into ...[next ste]
-
-
 steps:
 1 - html
 2 - bash
 3 - jpeg
 4 - pdf
 5 - zip
-
-
 
 html:
 - presentation
@@ -36,16 +25,15 @@ bash:
 
 jpeg:
 - stega
+-- alpha
 
 pdf:
 - hardware
-- find code = open door (logic circuit)
+-- logic circuit
 
 archive:
 - forensic
-- crypto (root me: file and secure storage, db navigateur)
-- secret ?
--- DONE - chrome snapshot
+-- chrome snapshot
 
 
 
@@ -53,7 +41,9 @@ RELIC CLOSED    = ADIcAAVHbDAtBDs9ADRtX000Z200      = PNG
 RELIC KEY       = Imp0st3r_4_T34m_M4gm4             = GUESS
 RELIC OPENED    = I_l0v3_Br0di3                     = RELIC CLOSED + KEY
 
-CODE        = 01101110011101110110010010011011      = PDF DOOR CODE
+ZIP PASS        = 01101110011101110110010010011011  = PDF DOOR CODE
 
-ZIP PASS        = I___llll0vvvv3333___Brr0ddi333    = PDF CODE + RELIC OPENED
+FLAG            = 'M(00)_Ninja_Transform           = heapshot decrypt(E_FLAG, RELIC OPENED)
+E_FLAF          = U2FsdGVkX18vwaWOf5ojX/vnOm60pmSDIFUGsgRQybsLfJ8ePdorcxSMcUjyXkW0 = heapshot encrypt(FLAG, RELIC OPENED)
 
+// NO --- ZIP PASS        = I___llll0vvvv3333___Brr0ddi333    = PDF CODE + RELIC OPENED
