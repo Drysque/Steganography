@@ -17,3 +17,4 @@ assert_eq $((${key:6:1}${key:9:1}-${key:12:2})) ${key:3:1}
 assert_eq ${key:5:1} ${relic:11:1}
 
 perl -e ' $k=$ARGV[0]; use MIME::Base64; $p=decode_base64($ARGV[1]); print $p ^ $k' $key $relic
+exit
